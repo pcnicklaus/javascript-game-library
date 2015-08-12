@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Library</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1>Game Library</h1>
+          <button type="button" class="btn btn-default" id="add-library">Add a Library</button>
+
+          <!-- Single button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose a library <span class="caret"></span>
+            </button>
+            <ul id="existing-library-select" class="dropdown-menu">
+              <li><a href="#" id="GL1">GL1</a></li>
+              <li><a href="#" id="GL2">GL2</a></li>
+              <li><a href="#" id="GL3">GL3</a></li>
+            </ul>
+          </div>
+
+          <br>
+          <br>
+            <form action="" id="library">
+              <br>
+              <h4>What's the name of your library?</h4>
+              <input type="text" name="Game Library" id="game-library">
+              <button type="submit" class="btn btn-default btn-sm" id="game-library-submit">submit...</button>
+            </form>
+
+
+
+       <!--      <select id="library-select">
+              <option value=""></option>
+            </select> -->
+
+            <form action="" id="game">
+              <h2 id="game-library-title"></h2>
+              <br>
+              <h4>What game do you want to add?</h4>
+              <h5>Game</h5>
+              <input type="text" name="game" id="title">
+              <br>
+              <h5>Genre</h5>
+              <input type="text" name="genre" id="genre">
+              <div id="game-fom-button"></div>
+            </form>
+        </div> <!-- end col-sm-4 -->
+
+
+
+        <div class="col-sm-8">
+          <br>
+          <div id="library-div">
+            <ul></ul>
+          </div>
+        </div> <!-- end col-sm-8 -->
+
+      </div>  <!-- end row -->
+    </div> <!-- end container -->
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/dom.js"></script>
+  </body>
+</html>
